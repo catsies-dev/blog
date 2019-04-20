@@ -1,0 +1,9 @@
+[[redirects]]
+  from = "https://catsies.dev/*" 
+  to = "https://blog.catsies.dev/:splat"
+  status =  301
+
+[[redirects]]
+  from = "https://catsies.netlify.com/*" 
+  to = "https://blog.catsies.dev/:splat" 
+  status = 301
