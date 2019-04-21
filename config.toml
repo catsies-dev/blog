@@ -13,7 +13,7 @@ copyright = "This work is licensed under a Creative Commons Attribution-NonComme
 enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/functions/emojify/
 
 [author]
-  name = "Carrie &amp; Larry"
+  name = "Carrie & Larry"
 
 [taxonomies]
   tag = "tags"
@@ -44,13 +44,13 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
 
   # Social Icons
   # Check https://github.com/Track3/hermit#social-icons for more info.
-  [[params.social]]
-    name = "twitter"
-    url = "https://twitter.com/"
+  #[[params.social]]
+  #  name = "twitter"
+  #  url = "https://twitter.com/"
 
-  [[params.social]]
-    name = "instagram"
-    url = "https://instagram.com/"
+  #[[params.social]]
+  #  name = "instagram"
+  #  url = "https://instagram.com/"
 
   [[params.social]]
     name = "github"
@@ -65,5 +65,20 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
 
   [[menu.main]]
     name = "About"
-    url = "about-hugo/"
+    url = "about/"
     weight = 20
+
+# GDPR
+[privacy]
+  [privacy.disqus]
+    disable = true
+  [privacy.googleAnalytics]
+    disable = true
+  [privacy.instagram]
+    disable = true
+  [privacy.twitter]
+    disable = true
+  [privacy.vimeo]
+    disable = true
+  [privacy.youtube]
+    disable = true
