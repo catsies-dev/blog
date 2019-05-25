@@ -17,6 +17,8 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
 
 [taxonomies]
   tag = "tags"
+  category = "categories"
+  by = "by"
 
 [params]
   dateform        = "Jan 2, 2006"
@@ -29,7 +31,7 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
   # images = [""]
   themeColor = "#494f5c"
 
-  homeSubtitle = "Ramblings from two humans and the adventures of two 🐱"
+  homeSubtitle = "Ramblings from two humans and two 🐱"
   footerCopyright = ' &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
   # bgImg = ""  # Homepage background-image URL
 

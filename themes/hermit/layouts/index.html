@@ -14,10 +14,23 @@
 	{{- end }}
 	<div id="spotlight" class="animated fadeIn">
 		<div id="home-center">
-			<h1 id="home-title">{{ .Site.Title }}</h1>
+			<h1 id="home-title">
+				<!-- {{ .Site.Title }} -->
+				<a href="/by/carrie">Carrie</a>,
+				<a href="/by/larry">Larry</a>
+				and
+				<a href="/by/catsies">catsies</a>
+			</h1>
 			{{- with .Site.Params.homeSubtitle }}
-			<p id="home-subtitle">{{.}}</p>
+			<p id="home-subtitle">{{.}} about:</p>
 			{{- end }}
+						
+			<p id="tags">
+			    {{ range $.Site.Taxonomies.tags.ByCount }}
+						<span class="tag"><a href="{{ "tags/" | absURL }}{{ .Name | urlize}}">{{.Name}}</a></span>
+			    {{ end }}
+			</p>
+						
 			{{- with .Site.Params.social }}
 			<div id="home-social">
 				{{ partialCached "social-icons.html" . }}
