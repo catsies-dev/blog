@@ -7,6 +7,9 @@ images:
 tags: 
   - programming
   - python
+by: 
+- larry
+- carrie
 ---
 The Zen of Python states:
 
